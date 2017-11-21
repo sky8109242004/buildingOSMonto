@@ -1,0 +1,217 @@
+{
+  "@context" : {
+    "v_stadium" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stadium"
+    },
+    "v_synagogue" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_synagogue"
+    },
+    "v_service" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_service"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "v_terrace" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_terrace"
+    },
+    "v_houseboat" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_houseboat"
+    },
+    "v_bunker" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bunker"
+    },
+    "v_commercial" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_commercial"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "v_university" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university"
+    },
+    "hasWheelchair" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair"
+    },
+    "v_shed" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shed"
+    },
+    "v_warehouse" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_warehouse"
+    },
+    "v_train_station" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_train_station"
+    },
+    "v_retail" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_retail"
+    },
+    "v_farm_auxiliary" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm_auxiliary"
+    },
+    "v_user_defined" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_user_defined"
+    },
+    "v_transportation" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transportation"
+    },
+    "v_cabin" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cabin"
+    },
+    "v_cowshed" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cowshed"
+    },
+    "v_bungalow" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bungalow"
+    },
+    "v_public" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_public"
+    },
+    "v_residential" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_residential"
+    },
+    "v_apartments" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_apartments"
+    },
+    "v_ruins" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_ruins"
+    },
+    "v_greenhouse" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_greenhouse"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "v_chapel" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_chapel"
+    },
+    "v_roof" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_roof"
+    },
+    "v_garage" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garage"
+    },
+    "v_hospital" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hospital"
+    },
+    "v_industrial" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_industrial"
+    },
+    "v_transformer_tower" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transformer_tower"
+    },
+    "v_cathedral" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cathedral"
+    },
+    "v_house" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_house"
+    },
+    "ID" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID"
+    },
+    "v_barn" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_barn"
+    },
+    "v_bridge" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bridge"
+    },
+    "v_sty" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_sty"
+    },
+    "hasHeight" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "v_construction" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_construction"
+    },
+    "levels" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "v_dormitory" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_dormitory"
+    },
+    "v_digester" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_digester"
+    },
+    "v_farm" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm"
+    },
+    "v_mosque" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_mosque"
+    },
+    "v_temple" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_temple"
+    },
+    "v_hangar" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hangar"
+    },
+    "v_stable" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stable"
+    },
+    "k_building" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building"
+    },
+    "v_civic" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_civic"
+    },
+    "hasNode" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode",
+      "@type" : "@id"
+    },
+    "v_church" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_church"
+    },
+    "hasEntrance" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance"
+    },
+    "v_shrine" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shrine"
+    },
+    "v_school" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_school"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "language" : {
+      "@id" : "http://purl.org/dc/elements/1.1/language"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "v_detached" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_detached"
+    },
+    "v_garages" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garages"
+    },
+    "Node" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node"
+    },
+    "v_static_caravan" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_static_caravan"
+    },
+    "fireproof" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "v_kiosk" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_kiosk"
+    },
+    "v_hotel" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hotel"
+    },
+    "v_hut" : {
+      "@id" : "http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hut"
+    }
+  }
+}
