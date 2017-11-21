@@ -1,0 +1,385 @@
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/elements/1.1/language> "English" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/terms/contributor> "Tee-Ann Teo <http://www.cv.nctu.edu.tw/chinese/teacher/teacher35.shtml>\nChiao-Ling Kuo <https://www.rchss.sinica.edu.tw/people/bio.php?PID=261>" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/terms/created> "2017-08-17" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/terms/creator> "Min-Che Hsieh" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/terms/description> "This ontology demonstrates the relationship of OSM tags in the field of building models and users can browse the classes and properties for the hierarchy. This ontology uses the tags be published on OSMwiki." .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://purl.org/dc/terms/title> "buildingOSMonto" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://www.w3.org/2000/01/rdf-schema#comment> "An ontology used to describe the relationship of OSM tags in the field of building models." .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "emergency" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "exit" .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "main" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "service" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid7 <http://www.w3.org/2002/07/owl#oneOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "limited" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid11 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "no" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "yes" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_apartments
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_apartments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_apartments> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_barn
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_barn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_barn> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bridge
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bridge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bridge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bungalow
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bungalow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bungalow> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bunker
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bunker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bunker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cabin
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cabin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cabin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cathedral
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cathedral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cathedral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_chapel
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_chapel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_chapel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_church
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_church> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_church> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_civic
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_civic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_civic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_commercial
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_commercial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_commercial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_construction
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_construction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_construction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cowshed
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cowshed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cowshed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_detached
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_detached> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_detached> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_digester
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_digester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_digester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_dormitory
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_dormitory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_dormitory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm_auxiliary
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm_auxiliary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm_auxiliary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garage
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garages
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_greenhouse
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_greenhouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_greenhouse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hangar
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hangar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hangar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hospital
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hospital> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hospital> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hotel
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_house
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_house> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_house> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_houseboat
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_houseboat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_houseboat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hut
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hut> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hut> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_industrial
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_industrial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_industrial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_kiosk
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_kiosk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_kiosk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_mosque
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_mosque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_mosque> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_public
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_public> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_public> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_residential
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_residential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_retail
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_retail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_retail> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_roof
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_ruins
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_ruins> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_ruins> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_school
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_school> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_service
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_service> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shed
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shrine
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shrine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shrine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stable
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stable> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stadium
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stadium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stadium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_static_caravan
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_static_caravan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_static_caravan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_sty
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_sty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_sty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_synagogue
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_synagogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_synagogue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_temple
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_temple> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_temple> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_terrace
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_terrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_terrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_train_station
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_train_station> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_train_station> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transformer_tower
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transformer_tower> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transformer_tower> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transportation
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transportation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_user_defined
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_user_defined> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_user_defined> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_warehouse
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_warehouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_warehouse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884358> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884372> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884395> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884408> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair> "yes" .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884358
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884358> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884358> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884372
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884372> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884372> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884395
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884395> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884395> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> .
+# 
+# http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884408
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884408> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID> .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/

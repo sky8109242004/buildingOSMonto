@@ -1,0 +1,442 @@
+@prefix : <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> .
+
+<http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto> rdf:type owl:Ontology ;
+                                                                     <http://purl.org/dc/elements/1.1/language> "English"^^xsd:string ;
+                                                                     <http://purl.org/dc/terms/contributor> """Tee-Ann Teo <http://www.cv.nctu.edu.tw/chinese/teacher/teacher35.shtml>
+Chiao-Ling Kuo <https://www.rchss.sinica.edu.tw/people/bio.php?PID=261>"""^^xsd:string ;
+                                                                     <http://purl.org/dc/terms/created> "2017-08-17"^^xsd:string ;
+                                                                     <http://purl.org/dc/terms/creator> "Min-Che Hsieh"^^xsd:string ;
+                                                                     <http://purl.org/dc/terms/description> "This ontology demonstrates the relationship of OSM tags in the field of building models and users can browse the classes and properties for the hierarchy. This ontology uses the tags be published on OSMwiki."^^xsd:string ;
+                                                                     <http://purl.org/dc/terms/title> "buildingOSMonto"^^xsd:string ;
+                                                                     rdfs:comment "An ontology used to describe the relationship of OSM tags in the field of building models."^^xsd:string ;
+                                                                     owl:versionInfo "1.0"^^xsd:double .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/language
+<http://purl.org/dc/elements/1.1/language> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasNode
+:hasNode rdf:type owl:ObjectProperty ;
+         rdfs:domain :k_building ;
+         rdfs:range :ID .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasEntrance
+:hasEntrance rdf:type owl:DatatypeProperty ;
+             rdfs:domain :k_building ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:oneOf [ rdf:type rdf:List ;
+                                      rdf:first "emergency"^^xsd:string ;
+                                      rdf:rest [ rdf:type rdf:List ;
+                                                 rdf:first "exit"^^xsd:string ;
+                                                 rdf:rest [ rdf:type rdf:List ;
+                                                            rdf:first "main"^^xsd:string ;
+                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                       rdf:first "service"^^xsd:string ;
+                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                  rdf:first "yes"^^xsd:string ;
+                                                                                  rdf:rest rdf:nil
+                                                                                ]
+                                                                     ]
+                                                          ]
+                                               ]
+                                    ]
+                        ] .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:domain :k_building ;
+           rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasWheelchair
+:hasWheelchair rdf:type owl:DatatypeProperty ;
+               rdfs:domain :k_building ;
+               rdfs:range [ rdf:type rdfs:Datatype ;
+                            owl:oneOf [ rdf:type rdf:List ;
+                                        rdf:first "limited"^^xsd:string ;
+                                        rdf:rest [ rdf:type rdf:List ;
+                                                   rdf:first "no"^^xsd:string ;
+                                                   rdf:rest [ rdf:type rdf:List ;
+                                                              rdf:first "yes"^^xsd:string ;
+                                                              rdf:rest rdf:nil
+                                                            ]
+                                                 ]
+                                      ]
+                          ] .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:fireproof
+:fireproof rdf:type owl:DatatypeProperty ;
+           rdfs:domain :k_building ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "no"^^xsd:string ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "yes"^^xsd:string ;
+                                               rdf:rest rdf:nil
+                                             ]
+                                  ]
+                      ] .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#hasBuilding:levels
+:levels rdf:type owl:DatatypeProperty ;
+        rdfs:domain :k_building ;
+        rdfs:range xsd:integer .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#ID
+:ID rdf:type owl:Class ;
+    rdfs:subClassOf :Node .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Node
+:Node rdf:type owl:Class ;
+      rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#k_building
+:k_building rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_apartments
+:v_apartments rdf:type owl:Class ;
+              rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_barn
+:v_barn rdf:type owl:Class ;
+        rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bridge
+:v_bridge rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bungalow
+:v_bungalow rdf:type owl:Class ;
+            rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_bunker
+:v_bunker rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cabin
+:v_cabin rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cathedral
+:v_cathedral rdf:type owl:Class ;
+             rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_chapel
+:v_chapel rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_church
+:v_church rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_civic
+:v_civic rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_commercial
+:v_commercial rdf:type owl:Class ;
+              rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_construction
+:v_construction rdf:type owl:Class ;
+                rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_cowshed
+:v_cowshed rdf:type owl:Class ;
+           rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_detached
+:v_detached rdf:type owl:Class ;
+            rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_digester
+:v_digester rdf:type owl:Class ;
+            rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_dormitory
+:v_dormitory rdf:type owl:Class ;
+             rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm
+:v_farm rdf:type owl:Class ;
+        rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_farm_auxiliary
+:v_farm_auxiliary rdf:type owl:Class ;
+                  rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garage
+:v_garage rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_garages
+:v_garages rdf:type owl:Class ;
+           rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_greenhouse
+:v_greenhouse rdf:type owl:Class ;
+              rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hangar
+:v_hangar rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hospital
+:v_hospital rdf:type owl:Class ;
+            rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hotel
+:v_hotel rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_house
+:v_house rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_houseboat
+:v_houseboat rdf:type owl:Class ;
+             rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_hut
+:v_hut rdf:type owl:Class ;
+       rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_industrial
+:v_industrial rdf:type owl:Class ;
+              rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_kiosk
+:v_kiosk rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_mosque
+:v_mosque rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_public
+:v_public rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_residential
+:v_residential rdf:type owl:Class ;
+               rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_retail
+:v_retail rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_roof
+:v_roof rdf:type owl:Class ;
+        rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_ruins
+:v_ruins rdf:type owl:Class ;
+         rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_school
+:v_school rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_service
+:v_service rdf:type owl:Class ;
+           rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shed
+:v_shed rdf:type owl:Class ;
+        rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_shrine
+:v_shrine rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stable
+:v_stable rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_stadium
+:v_stadium rdf:type owl:Class ;
+           rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_static_caravan
+:v_static_caravan rdf:type owl:Class ;
+                  rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_sty
+:v_sty rdf:type owl:Class ;
+       rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_synagogue
+:v_synagogue rdf:type owl:Class ;
+             rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_temple
+:v_temple rdf:type owl:Class ;
+          rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_terrace
+:v_terrace rdf:type owl:Class ;
+           rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_train_station
+:v_train_station rdf:type owl:Class ;
+                 rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transformer_tower
+:v_transformer_tower rdf:type owl:Class ;
+                     rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_transportation
+:v_transportation rdf:type owl:Class ;
+                  rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_university
+:v_university rdf:type owl:Class ;
+              rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_user_defined
+:v_user_defined rdf:type owl:Class ;
+                rdfs:subClassOf :k_building .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#v_warehouse
+:v_warehouse rdf:type owl:Class ;
+             rdfs:subClassOf :k_building .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#Environmental_Engineering_Research_Institute
+:Environmental_Engineering_Research_Institute rdf:type owl:NamedIndividual ,
+                                                       :v_university ;
+                                              :hasNode : ,
+                                                       : ,
+                                                       : ,
+                                                       : ;
+                                              :hasWheelchair "yes"^^xsd:string ;
+                                              :levels 4 .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884358
+: rdf:type owl:NamedIndividual ,
+           :ID .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884372
+: rdf:type owl:NamedIndividual ,
+           :ID .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884395
+: rdf:type owl:NamedIndividual ,
+           :ID .
+
+
+###  http://www.semanticweb.org/min/ontologies/2016/10/buildingOSMonto#1513884408
+: rdf:type owl:NamedIndividual ,
+           :ID .
+
+
+###  Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
